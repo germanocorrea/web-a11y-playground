@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drag and drop</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="alert-area" aria-live="assertive"></div>
+            <div id="maindrag">
+                <a href="#" class="indicator-anchor" style="display:none;">Beginning of drag and drop widget.</a>
+                <div id="draggable" tabindex="0" draggable="true" ondragstart="event.dataTransfer.setData( 'text/plain',null)" aria-grabbed="false">
+                    Wash the dishes
+                </div>
+
+                <div class="dropzone">
+                    <span id="drop1">To Do</span>
+                </div>
+
+                <div class="dropzone">
+                    <span id="drop2">Doing</span>
+                </div>
+
+                <div class="dropzone">
+                    <span id="drop3">Done</span>
+                </div>
+                <a href="#" class="indicator-anchor" style="display:none;">End of drag and drop widget.</a>
+        </div>
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
