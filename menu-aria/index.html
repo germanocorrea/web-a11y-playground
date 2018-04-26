@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu with ARIA</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+
+        <ul role="menu" id="vertical-menu" tabindex="0">
+            <li tabindex="0" role="menuitem">Item 1</li>
+            <li tabindex="0" role="menuitem">Item 2</li>
+            <div role="group" id="radiogroup">
+                <li tabindex="0" class="radio-item" role="menuitemradio" aria-checked="false">Opção 1</li>
+                <li tabindex="0" class="radio-item" role="menuitemradio" aria-checked="false">Opção 2</li>
+                <li tabindex="0" class="radio-item" role="menuitemradio" aria-checked="true">Opção 3</li>
+            </div>
+        </ul>
+
+        <div role="menubar" id="horizontal-menu" tabindex="0">
+            <span tabindex="0" role="menuitem">Novo Documento</span>
+            <span tabindex="0" role="menuitem">Abrir Documento</span>
+            <div role="group">
+                <span tabindex="0" class="checkbox-item" role="menuitemcheckbox" aria-checked="true">Salvar Automaticamente</span>
+                <span tabindex="0" class="checkbox-item" role="menuitemcheckbox" aria-checked="false">Salvar na Nuvem</span>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

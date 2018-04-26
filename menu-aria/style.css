@@ -1,0 +1,28 @@
+li[role=menuitem], li[role=menuitemradio], li[role=menuitemcheckbox] {
+    list-style: none;
+    display: block
+}
+
+ul[role=menu] li, div[role=menubar] span {
+    background-color: black;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+ul[role=menu] li:hover, div[role=menubar] span:hover, ul[role=menu] li:focus, div[role=menubar] span:focus {
+    background-color: lightgrey;
+    color: black;
+}
+
+span[role=menuitem], span[role=menuitemradio], span[role=menuitemcheckbox] {
+    list-style: none;
+    margin-bottom: 0.5em;
+    margin-right: 0;
+    margin-left: 0;
+    display: inline-block
+}
+
+[aria-checked="true"] {
+    background-color: grey !important;
+}
